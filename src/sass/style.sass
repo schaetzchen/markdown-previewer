@@ -1,0 +1,47 @@
+*
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+body
+  background-color: #494f59
+
+.container
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+  gap: 50px
+  padding: 50px 0
+
+.editor
+  width: 850px
+  border: 1px solid #ffffff
+  &_full
+    min-height: calc(100vh - 63px)
+    .editor__textarea
+      min-height: calc(100vh - 110px)
+  &__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 8px
+    border-bottom: 1px solid #ffffff
+  &__title
+    color: #ffffff
+    margin: 0
+  &__textarea
+    display: block
+    max-width: 100%
+    min-width: 100%
+    min-height: 200px
+    padding: 12px
+    border: none
+    outline: none
+    font-size: 16px
+    font-family: 'Roboto Mono', monospace
+  &__preview
+    background-color: #ffffff
+    width: 100%
+    min-height: 200px
+    padding: 12px
